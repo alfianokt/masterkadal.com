@@ -1,0 +1,7 @@
+{
+  "name": "masterkadal",
+  "alias": "masterkadal.com",
+  "routes": [
+    {"src": "/404", "status": 404}
+  ] 
+}
