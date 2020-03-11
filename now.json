@@ -1,9 +1,5 @@
 {
   "name": "masterkadal",
   "alias": "masterkadal.com",
-  "routes": [
-    { "src": "/(.*)", "dest": "/$1" },
-    { "handle": "filesystem" },
-    { "src": "/.*", "status": 404, "dest": "/404" }
-  ]
+  "builds": [{ "src": "package.json", "use": "now-sapper" }]
 }
