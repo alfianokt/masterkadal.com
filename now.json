@@ -2,6 +2,8 @@
   "name": "masterkadal",
   "alias": "masterkadal.com",
   "routes": [
-    {"src": "/404", "status": 404}
-  ] 
+    { "src": "/(.*)", "dest": "/$1" },
+    { "handle": "filesystem" },
+    { "src": "/.*", "status": 404, "dest": "/404" }
+  ]
 }
